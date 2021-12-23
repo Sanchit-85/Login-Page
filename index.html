@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Login and Registration Form </title>
+        <link rel="icon" type="png" href="C:\Users\sanch\OneDrive\Desktop\icons8-login-as-user-30.png">
+		<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="background">
+		<div class="Login-Form">
+			<div class="button">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="Login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			
+		   </div>
+		   <div class="Social-Icons">
+		   	<img src="fb.png">
+		   	<img src="gp.png">
+		   	<img src="tw.png">
+		   	<div>
+		   		<form id="login" class="Input-field">
+		   			<input type="text" Class ="user-input" name="User Id" placeholder="USER ID">
+		   			<input type="password" Class ="user-input" name="User Id" placeholder="ENTER PASSWORD" required>
+		   			<input type="checkbox" class="check-box"><span>Remember Password</span>
+		   			<button type="submit" class="submit-btn">Log In</button>
+
+		   		</form>
+
+		   		<form id="register"class="Input-field">
+		   			<input type="text" Class ="user-input" name="User Id" placeholder="USER ID">
+		   			<input type="email" Class ="user-input" name="User Id" placeholder="Email Id">
+		   			<input type="password" Class ="user-input" name="User Id" placeholder="ENTER PASSWORD" required>
+		   			<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+		   			<button type="submit" class="submit-btn">Register</button>
+
+		   		</form>
+		   	</div>
+
+		
+	</div>
+	<script >
+		var x=document.getElementById("login")
+		var y=document.getElementById("register")
+		var z=document.getElementById("btn")
+		function register(){
+			x.style.left="-400px";
+			y.style.left="50px";
+			z.style.left="110px";
+		}
+		function Login(){
+			x.style.left="50px";
+			y.style.left="450px";
+			z.style.left="0px";
+		}
+	</script>
+
+</body>
+</html>
